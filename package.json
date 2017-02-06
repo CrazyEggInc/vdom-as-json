@@ -25,7 +25,7 @@
   "author": "Nolan Lawson <nolan@nolanlawson.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "virtual-dom": "^2.1.1"
+    "virtual-dom": "CrazyEggInc/virtual-dom"
   },
   "devDependencies": {
     "browserify": "^11.2.0",
