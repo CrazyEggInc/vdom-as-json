@@ -7,9 +7,7 @@
     "build": "mkdirp dist && browserify -s vdomAsJson . > dist/vdom-as-json.js",
     "prepublish": "npm run build",
     "jshint": "jshint -c .jshintrc lib",
-    "test": "mocha --grep=$GREP test/test.js && npm run jshint",
-    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha test/test.js && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100",
-    "report-coverage": "npm run coverage && istanbul-coveralls --no-rm"
+    "test": "mocha --grep=$GREP test/test.js && npm run jshint"
   },
   "repository": {
     "type": "git",
@@ -28,12 +26,10 @@
     "virtual-dom": "CrazyEggInc/virtual-dom"
   },
   "devDependencies": {
-    "browserify": "^11.2.0",
-    "chai": "^3.4.0",
-    "istanbul": "^0.4.0",
-    "istanbul-coveralls": "^1.0.3",
-    "jshint": "2.8.0",
-    "mkdirp": "^0.5.1",
-    "mocha": "^2.3.3"
+    "browserify": "^17.0.0",
+    "chai": "^4.5.0",
+    "jshint": "2.13.6",
+    "mkdirp": "^3.0.1",
+    "mocha": "^10.7.0"
   }
 }
